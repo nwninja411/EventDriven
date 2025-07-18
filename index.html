@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-A-Gollum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Whack-A-Gollum</h1>
+    </header>
+    <main>
+        <!-- the score during the round will show here -->
+        <p>
+            Score: <span id="spnScore"></span>
+        </p>
+
+        <!-- Game Board -->
+         <div id="divGameBoard">
+            <!-- Build the amount of holes desired -->
+             <div class="hole"></div>
+             <div class="hole"></div>
+             <div class="hole"></div>
+             <div class="hole"></div>
+             <div class="hole"></div>
+             <div class="hole"></div>
+         </div>
+         <!-- button to start game -->
+         <input type="button" onclick="startGame();" value="Start Game!">
+
+         <audio id="Bonk" src="bonk_1.mp3"></audio>
+    </main>
+    <script src="scirpt.js"></script>
+    
+</body>
+</html>

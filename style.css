@@ -1,0 +1,70 @@
+@font-face {
+    /*Here I am naming my font so that I can refernce it*/
+    font-family: 'RingBearer';
+    /*Here I am linking my font file so that when I refernce it it knows what the font looks like*/
+    src: url('RingbearerMedium-51mgZ.ttf') format('truetype');
+    /*these tags let the code know that the style and weight should be normal rather than bold or italic*/
+    font-weight: normal; 
+    font-style: normal; 
+}
+body{
+    text-align: center;
+    justify-content: center;
+    background: radial-gradient( rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.425) ), url('ChatGPT Image Jul 17, 2025, 08_28_34 PM.png');
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-attachment: fixed;
+    background-color: #20271a;
+    color: #f5e7c4;
+    text-shadow: 3px 3px 6px #000;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 4px #473e26;
+    font-family: 'RingBearer', serif;
+    text-align: center;
+}
+#divGameBoard{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.hole{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #2b352f;
+    box-shadow: inset 0 0 10px #000, 0 0 8px rgb(46, 46, 46);
+    border: 2px solid #2c4131;
+}
+
+input {
+    background-color: #1d1832;
+    color: #f8f4e1;
+    border: 1px solid #584c3d;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'RingBearer', sans-serif;
+    padding: 15px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input:hover {
+    background-color: #2e254b;
+}
+
+/* When the mole pops up it will turn the image to evil smeagol */
+.mole{
+    background-image: url('Smeagol.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 30px #000000;
+    transform: scale(1.15);
+    transition: all 0.1s ease;
+}
